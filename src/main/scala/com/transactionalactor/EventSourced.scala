@@ -2,6 +2,7 @@ package com.transactionalactor
 
 import akka.actor.Actor.Receive
 import akka.actor._
+import akka.persistence.{EventsourcedProcessor, SnapshotOffer}
 
 object EventSourcedDriver extends CompletableApp(4) {
 }
