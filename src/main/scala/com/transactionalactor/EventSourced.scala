@@ -39,3 +39,14 @@ class Order extends EventsourcedProcessor {
   }
 }
 
+case class OrderState(
+                       customerInfo: String,
+                       lineItems: List[OrderLineItem],
+                       placed: Boolean) {
+
+  def update(event: DomainEvent): OrderState = {
+    null
+  }
+}
+
+case class OrderLineItem()
