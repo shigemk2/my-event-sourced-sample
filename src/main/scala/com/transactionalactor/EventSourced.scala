@@ -2,5 +2,5 @@ package com.transactionalactor
 
 import akka.actor._
 
-object EventSourcedDriver {
+object EventSourcedDriver extends CompletableApp(4) {
 }
